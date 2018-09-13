@@ -77,7 +77,7 @@ func CheckFunction(line string) string {
 	constLeft := 1
 	constRight := 2
 
-	invalidStr := "+-{}#@="
+	invalidStr := "{}#=;"
 	for i:= 0; i < len(line); i++ {
 		switch  line[i] {
 		case constStr[constBlank] :
@@ -105,10 +105,6 @@ func CheckFunction(line string) string {
 		case  invalidStr[3]:
 			return ""
 		case  invalidStr[4]:
-			return ""
-		case  invalidStr[5]:
-			return ""
-		case  invalidStr[6]:
 			return ""
 		default:
 			if begin > -1 {
