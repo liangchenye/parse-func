@@ -7,7 +7,7 @@ import (
 )
 
 func TestParseFile(t *testing.T) {
-	funcs := ParseFile("test001.data")
+	funcs := ParseFile("testdata/test001.data")
 	if len(funcs) != 1 {
 		fmt.Println("invalid items ", funcs)
 	}
