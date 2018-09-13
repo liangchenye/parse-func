@@ -12,7 +12,6 @@ type Function struct {
 }
 
 func init() {
-	fmt.Println("hello, wolrd!")
 }
 
 func ParseFile(filename string) []Function {

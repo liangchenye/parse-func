@@ -71,7 +71,7 @@ index 5979b477..e928601e 100644
 	assert.Equal(t, " --git a/controller/webv1/dockerhub.go b/controller/webv1/dockerhub.go", item.File, "fail to get diff info")
 
 	// get the real file for openssl.. 
-	assert.Equal(t, "b/controller/webv1/dockerhub.go", item.GetFile(), "fail to get fail")
+	assert.Equal(t, "controller/webv1/dockerhub.go", item.GetFile(), "fail to get fail")
 
 	summary := item.Summary()
 	assert.Equal(t, int64(1), summary.Added, "get summary added error")

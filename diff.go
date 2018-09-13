@@ -208,7 +208,9 @@ func NewDiffItems(lines []Line, search SearchCondition) ([]DiffItem, error) {
 func (di *DiffItem) GetFile() string {
 	strs := strings.Split(di.File, " ")
 	if len(strs) > 0 {
-		return strs[len(strs) -1]
+		file := strs[len(strs) -1]
+		ss := strings.SplitN(file, "/", 2)
+		return ss[1]
 	}
 	return ""
 }

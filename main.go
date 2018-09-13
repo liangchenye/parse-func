@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"io/ioutil"
 	"strings"
 	"path/filepath"
@@ -18,16 +19,21 @@ func funcToMap(funcs []Function) map[string]int {
 func Unify(dataDir string, diffFile string) {
 	sds := GetSimpleDiff(diffFile)
 
+	fmt.Printf("Parsing %s\n", diffFile)
 	for _, sd := range sds {
 		diffURL := filepath.Join(dataDir, sd.File)
 		funcs := ParseFile(diffURL)
 		f := funcToMap(funcs)
 
+		sdMaps := make(map[string]bool)
 		for _,  sdFunc := range sd.Funcs {
+			sdMaps[sdFunc] = true
+		}
+		for sdFunc, _ := range sdMaps {
 			if loc, ok := f[sdFunc]; ok {
-				fmt.Printf("%s %s %d\n", sd.File, sdFunc, loc)
+				fmt.Printf("\tLiang Hit it! %s %s %d\n", sd.File, sdFunc, loc)
 			} else {
-				fmt.Println("Cannot find it!")
+				fmt.Printf("\tCannot find the function! %s %s\n", sd.File, sdFunc)
 			}
 		}
 //		fmt.Printf("%s has %d funcs\n", diffURL, len(funcs), funcs)
@@ -89,8 +95,15 @@ func functionDemo() {
 }
 
 func main() {
+	if len(os.Args) < 3 {
+		fmt.Println("help:  datadir, diffurl")
+	}
+
 	dataDir := "./data"
 	diffFile := "./data/openssl-1.0.2k-no-ssl2.patch"
+
+	dataDir = os.Args[1]
+	diffFile = os.Args[2]
 	Unify(dataDir, diffFile)
 	//diffDemo()
 }

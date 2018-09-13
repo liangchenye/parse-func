@@ -1,0 +1,246 @@
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2e-rpmbuild.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-defaults.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2i-enginesdir.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-no-rpath.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-test-use-localhost.patch
+	Liang Hit it! ssl/ssltest.c main 823
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.0-timezone.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.1c-perlfind.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.1c-aliasing.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2c-default-paths.patch
+	Liang Hit it! apps/s_server.c MAIN 1062
+	Liang Hit it! apps/s_time.c MAIN 224
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-issuer-hash.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.0-beta4-ca-dir.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-x509.patch
+	Liang Hit it! crypto/x509/by_file.c X509_load_cert_file 60
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-version-add-engines.patch
+	Liang Hit it! apps/version.c MAIN 85
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-ipv6-apps.patch
+	Liang Hit it! apps/s_client.c MAIN 1477
+	Liang Hit it! apps/s_server.c MAIN 1063
+	Liang Hit it! apps/s_socket.c *GetHostByName 35
+	Liang Hit it! apps/s_socket.c ssl_sock_init 52
+	Liang Hit it! apps/s_socket.c do_server 34
+	Liang Hit it! apps/s_socket.c do_accept 71
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2i-fips.patch
+	Liang Hit it! apps/speed.c MAIN 2191
+	Liang Hit it! crypto/aes/aes_misc.c *AES_options 7
+	Liang Hit it! crypto/cmac/cmac.c *CMAC_CTX_new 9
+	Liang Hit it! crypto/cmac/cmac.c CMAC_Init 50
+	Liang Hit it! crypto/cmac/cmac.c CMAC_Update 38
+	Liang Hit it! crypto/des/set_key.c DES_set_key_checked 8
+	Liang Hit it! crypto/dh/dh_gen.c DH_generate_parameters_ex 12
+	Liang Hit it! crypto/dh/dh_gen.c dh_builtin_genparams 93
+	Liang Hit it! crypto/dh/dh_key.c dh_bn_mod_exp 11
+	Liang Hit it! crypto/dh/dh_key.c DH_compute_key 10
+	Liang Hit it! crypto/dh/dh_key.c generate_key 86
+	Liang Hit it! crypto/dh/dh_key.c compute_key 62
+	Liang Hit it! crypto/dh/dh_lib.c DH_set_default_method 3
+	Liang Hit it! crypto/dsa/dsa_gen.c DSA_generate_parameters_ex 20
+	Liang Hit it! crypto/dsa/dsa_gen.c dsa_builtin_paramgen 70
+	Liang Hit it! crypto/dsa/dsa_gen.c dsa_builtin_paramgen2 300
+	Liang Hit it! crypto/dsa/dsa_key.c DSA_generate_key 12
+	Liang Hit it! crypto/dsa/dsa_key.c dsa_builtin_keygen 68
+	Liang Hit it! crypto/dsa/dsa_lib.c DSA_set_default_method 3
+	Liang Hit it! crypto/dsa/dsa_ossl.c *dsa_do_sign 100
+	Liang Hit it! crypto/dsa/dsa_ossl.c dsa_do_verify 105
+	Liang Hit it! crypto/dsa/dsa_pmeth.c pkey_dsa_paramgen 21
+	Liang Hit it! crypto/dsa/dsatest.c dsa_cb 25
+	Liang Hit it! crypto/dsa/dsatest.c main 98
+	Liang Hit it! crypto/evp/c_allc.c OpenSSL_add_all_ciphers 240
+	Liang Hit it! crypto/evp/digest.c EVP_DigestInit 4
+	Liang Hit it! crypto/evp/digest.c EVP_DigestInit_ex 102
+	Liang Hit it! crypto/evp/digest.c EVP_DigestFinal 6
+	Liang Hit it! crypto/evp/digest.c EVP_MD_CTX_destroy 6
+	Liang Hit it! crypto/evp/digest.c EVP_MD_CTX_cleanup 27
+	Liang Hit it! crypto/evp/e_aes.c aes_gcm_ctrl 132
+	Liang Hit it! crypto/evp/e_aes.c aes_xts_cipher 22
+	Liang Hit it! crypto/evp/e_null.c null_cipher 5
+	Liang Hit it! crypto/evp/evp_enc.c EVP_CipherInit_ex 167
+	Liang Hit it! crypto/evp/evp_enc.c EVP_CIPHER_CTX_free 6
+	Liang Hit it! crypto/evp/evp_enc.c EVP_CIPHER_CTX_cleanup 21
+	Liang Hit it! crypto/evp/evp_lib.c EVP_CIPHER_CTX_block_size 3
+	Liang Hit it! crypto/evp/evp_lib.c *EVP_CIPHER_CTX_cipher 3
+	Liang Hit it! crypto/evp/evp_lib.c EVP_MD_size 7
+	Liang Hit it! crypto/evp/p_sign.c EVP_SignFinal 71
+	Liang Hit it! crypto/evp/p_verify.c EVP_VerifyFinal 66
+	Liang Hit it! crypto/hmac/hmac.c HMAC_CTX_copy 14
+	Liang Hit it! crypto/hmac/hmac.c HMAC_Init_ex 88
+	Liang Hit it! crypto/hmac/hmac.c HMAC_Init 5
+	Liang Hit it! crypto/hmac/hmac.c HMAC_Final 19
+	Liang Hit it! crypto/md2/md2_dgst.c *MD2_options 6
+	Liang Hit it! crypto/o_fips.c FIPS_mode_set 22
+	Liang Hit it! crypto/rand/md_rand.c ssleay_rand_bytes 199
+	Cannot find the function! crypto/ripemd/rmd_dgst.c ripemd160_block_x86
+	Liang Hit it! crypto/rsa/rsa_crpt.c RSA_private_encrypt 10
+	Liang Hit it! crypto/rsa/rsa_crpt.c RSA_public_decrypt 10
+	Liang Hit it! crypto/rsa/rsa_eay.c RSA_eay_public_encrypt 114
+	Liang Hit it! crypto/rsa/rsa_eay.c RSA_eay_private_encrypt 148
+	Liang Hit it! crypto/rsa/rsa_eay.c RSA_eay_private_decrypt 146
+	Liang Hit it! crypto/rsa/rsa_eay.c RSA_eay_public_decrypt 115
+	Liang Hit it! crypto/rsa/rsa_eay.c RSA_eay_mod_exp 166
+	Liang Hit it! crypto/rsa/rsa_gen.c rsa_builtin_keygen 170
+	Liang Hit it! crypto/rsa/rsa_gen.c RSA_generate_key_ex 12
+	Liang Hit it! crypto/rsa/rsa_lib.c *RSA_new 5
+	Liang Hit it! crypto/rsa/rsa_lib.c RSA_set_method 26
+	Liang Hit it! crypto/rsa/rsa_lib.c *RSA_new_method 81
+	Liang Hit it! crypto/rsa/rsa_pmeth.c pkey_rsa_sign 69
+	Liang Hit it! crypto/rsa/rsa_pmeth.c pkey_rsa_verify 55
+	Liang Hit it! crypto/rsa/rsa_sign.c RSA_sign 78
+	Liang Hit it! crypto/rsa/rsa_sign.c int_rsa_verify 125
+	Liang Hit it! crypto/sha/sha256.c fips_md_init_ctx 16
+	Liang Hit it! crypto/sha/sha512.c fips_md_init_ctx 19
+	Liang Hit it! ssl/ssl_algs.c SSL_library_init 138
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2j-krb5keytab.patch
+	Liang Hit it! apps/s_client.c sc_usage 152
+	Liang Hit it! apps/s_client.c MAIN 1486
+	Liang Hit it! apps/s_server.c MAIN 1074
+	Liang Hit it! apps/s_server.c sv_body 423
+	Liang Hit it! apps/s_server.c www_body 404
+	Liang Hit it! apps/s_server.c sv_usage 193
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-env-zlib.patch
+	Liang Hit it! ssl/ssl_ciph.c load_builtin_compressions 38
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-readme-warning.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.1i-algo-doc.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-dtls1-abi.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-version.patch
+	Cannot find the function! crypto/cversion.c *SSLeay_version
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-rsa-x931.patch
+	Liang Hit it! apps/genrsa.c MAIN 236
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-fips-md5-allow.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-apps-dgst.patch
+	Liang Hit it! apps/enc.c MAIN 577
+	Liang Hit it! apps/req.c MAIN 885
+	Liang Hit it! apps/ts.c MAIN 243
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2k-starttls.patch
+	Liang Hit it! apps/apps.c raw_write_stdout 3
+	Liang Hit it! apps/s_client.c print_stuff 193
+	Liang Hit it! apps/s_client.c sc_usage 158
+	Liang Hit it! apps/s_client.c MAIN 1782
+	Liang Hit it! apps/s_client.c ocsp_resp_cb 22
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2i-chil-fixes.patch
+	Liang Hit it! engines/e_chil.c hwcrhk_insert_card 66
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2h-pkgconfig.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2i-secure-getenv.patch
+	Liang Hit it! crypto/conf/conf_api.c *_CONF_get_string 29
+	Liang Hit it! crypto/conf/conf_mod.c *CONF_get1_default_config_file 26
+	Liang Hit it! crypto/engine/eng_list.c *ENGINE_by_id 70
+	Liang Hit it! crypto/o_init.c init_fips_mode 19
+	Liang Hit it! crypto/rand/randfile.c *RAND_file_name 47
+	Liang Hit it! crypto/x509/by_dir.c dir_ctrl 25
+	Liang Hit it! crypto/x509/by_file.c by_file_ctrl 31
+	Liang Hit it! crypto/x509/x509_vfy.c check_chain_extensions 159
+	Liang Hit it! engines/ccgost/gost_ctl.c *get_gost_engine_param 16
+	Liang Hit it! engines/ccgost/gost_ctl.c gost_set_default_param 16
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-fips-ec.patch
+	Liang Hit it! crypto/ecdh/ecdhtest.c main 82
+	Liang Hit it! crypto/ecdh/ech_lib.c ECDH_set_default_method 3
+	Cannot find the function! crypto/ecdh/ech_ossl.c ecdh_compute_key
+	Liang Hit it! crypto/ecdsa/ecdsatest.c restore_rand 6
+	Liang Hit it! crypto/ecdsa/ecdsatest.c fbytes 22
+	Liang Hit it! crypto/ecdsa/ecdsatest.c main 46
+	Liang Hit it! crypto/ecdsa/ecs_lib.c ECDSA_set_default_method 3
+	Liang Hit it! crypto/ecdsa/ecs_ossl.c *ecdsa_do_sign 119
+	Liang Hit it! crypto/ecdsa/ecs_ossl.c ecdsa_do_verify 119
+	Liang Hit it! crypto/ec/ec_cvt.c *EC_GROUP_new_curve_GFp 70
+	Liang Hit it! crypto/ec/ec_cvt.c *EC_GROUP_new_curve_GF2m 17
+	Liang Hit it! crypto/ec/ec_key.c EC_KEY_up_ref 13
+	Liang Hit it! crypto/ec/ec_key.c EC_KEY_generate_key 72
+	Liang Hit it! crypto/ec/ecp_mont.c *EC_GFp_mont_method 43
+	Liang Hit it! crypto/ec/ecp_nist.c *EC_GFp_nist_method 43
+	Liang Hit it! crypto/ec/ecp_smpl.c *EC_GFp_simple_method 43
+	Liang Hit it! crypto/ec/ecp_smpl.c ec_GFp_simple_group_set_curve 61
+	Liang Hit it! crypto/fips/fips_post.c FIPS_selftest 34
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2g-manfix.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-fips-ctor.patch
+	Liang Hit it! crypto/fips/fips.c FIPS_module_mode_set 62
+	Liang Hit it! crypto/fips/fips.c *bin2hex 25
+	Liang Hit it! crypto/fips/fips.c compute_file_hmac 44
+	Liang Hit it! crypto/fips/fips.c FIPSCHECK_verify 56
+	Liang Hit it! crypto/o_init.c init_fips_mode 26
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2c-ecc-suiteb.patch
+	Liang Hit it! apps/speed.c MAIN 2129
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2j-deprecate-algos.patch
+	Liang Hit it! crypto/asn1/a_verify.c ASN1_verify 54
+	Liang Hit it! crypto/asn1/a_verify.c ASN1_item_verify 98
+	Liang Hit it! crypto/o_init.c init_fips_mode 26
+	Liang Hit it! ssl/s3_clnt.c ssl3_send_client_certificate 82
+	Liang Hit it! ssl/s3_clnt.c ssl3_check_cert_and_algorithm 184
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-compat-symbols.patch
+	Liang Hit it! crypto/fips/fips.c FIPS_module_mode 13
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2j-new-fips-reqs.patch
+	Liang Hit it! crypto/bn/bn_rand.c bnrand 86
+	Liang Hit it! crypto/dh/dh_gen.c dh_builtin_genparams 93
+	Liang Hit it! crypto/dsa/dsa_gen.c dsa_builtin_paramgen 72
+	Liang Hit it! crypto/dsa/dsa_key.c dsa_builtin_keygen 68
+	Liang Hit it! crypto/evp/e_aes.c aesni_xts_init_key 33
+	Liang Hit it! crypto/evp/e_aes.c aes_t4_xts_init_key 64
+	Liang Hit it! crypto/evp/e_aes.c aes_xts_init_key 84
+	Liang Hit it! crypto/fips/fips.c FIPS_module_mode_set 60
+	Liang Hit it! crypto/fips/fips_post.c FIPS_selftest 36
+	Liang Hit it! crypto/fips/fips_rsa_selftest.c FIPS_selftest_rsa 77
+	Liang Hit it! crypto/rand/rand_lib.c drbg_rand_add 9
+	Liang Hit it! crypto/rsa/rsa_gen.c RSA_generate_key_ex 12
+	Liang Hit it! crypto/rsa/rsa_gen.c rsa_builtin_keygen 156
+	Liang Hit it! ssl/t1_enc.c tls1_PRF 44
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2j-downgrade-strength.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2k-cc-reqs.patch
+	Liang Hit it! crypto/rsa/rsa_gen.c rsa_builtin_keygen 164
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2i-enc-fail.patch
+	Liang Hit it! crypto/evp/bio_enc.c enc_ctrl 87
+	Liang Hit it! crypto/evp/bio_enc.c BIO_set_cipher 19
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2d-secp256k1.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2e-remove-nistp224.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2e-speed-doc.patch
+	Liang Hit it! apps/speed.c MAIN 2123
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2k-no-ssl2.patch
+	Liang Hit it! apps/s_client.c sc_usage 160
+	Liang Hit it! apps/s_server.c sv_usage 195
+	Liang Hit it! apps/s_time.c s_time_usage 28
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2k-long-hello.patch
+	Liang Hit it! ssl/s3_srvr.c ssl3_send_hello_request 10
+	Liang Hit it! ssl/s3_srvr.c ssl3_get_client_hello 583
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2k-fips-randlock.patch
+	Liang Hit it! crypto/fips/fips_drbg_lib.c FIPS_drbg_reseed 3
+	Liang Hit it! crypto/rand/md_rand.c ssleay_rand_bytes 199
+	Liang Hit it! crypto/rand/rand_lib.c drbg_rand_add 9
+	Liang Hit it! crypto/rand/rand_lib.c drbg_rand_seed 9
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2e-wrap-pad.patch
+	Liang Hit it! crypto/evp/c_allc.c OpenSSL_add_all_ciphers 247
+	Liang Hit it! crypto/evp/e_aes.c aes_wrap_init_key 18
+	Liang Hit it! crypto/evp/e_aes.c aes_wrap_cipher 52
+	Liang Hit it! crypto/evp/e_aes.c *EVP_aes_256_wrap 3
+	Liang Hit it! crypto/modes/wrap128.c CRYPTO_128_wrap 30
+	Liang Hit it! crypto/modes/wrap128.c CRYPTO_128_unwrap 16
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2a-padlock64.patch
+	Liang Hit it! engines/e_padlock.c ENGINE_load_padlock 11
+	Liang Hit it! engines/e_padlock.c padlock_available 47
+	Liang Hit it! engines/e_padlock.c padlock_reload_key 4
+	Cannot find the function! engines/e_padlock.c *name
+	Cannot find the function! engines/e_padlock.c PADLOCK_XCRYPT_ASM
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2i-trusted-first-doc.patch
+	Liang Hit it! apps/cms.c MAIN 1066
+	Liang Hit it! apps/ocsp.c MAIN 768
+	Liang Hit it! apps/s_client.c sc_usage 162
+	Liang Hit it! apps/smime.c MAIN 656
+	Liang Hit it! apps/s_server.c sv_usage 197
+	Liang Hit it! apps/s_time.c s_time_usage 29
+	Liang Hit it! apps/ts.c MAIN 243
+	Liang Hit it! apps/verify.c MAIN 177
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2k-backports.patch
+	Liang Hit it! ssl/s3_lib.c ssl3_get_req_cert_type 103
+	Liang Hit it! ssl/s3_srvr.c ssl3_send_certificate_request 92
+	Liang Hit it! ssl/t1_lib.c tls12_get_psigalgs 32
+	Liang Hit it! ssl/t1_lib.c tls12_check_peer_sigalg 70
+	Liang Hit it! ssl/t1_lib.c ssl_set_client_disabled 73
+	Liang Hit it! ssl/t1_lib.c tls1_set_shared_sigalgs 45
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2k-ppc-update.patch
+	Cannot find the function! crypto/evp/e_aes.c HWAES_cbc_encrypt
+	Liang Hit it! crypto/evp/e_aes.c aes_xts_init_key 90
+	Cannot find the function! crypto/evp/e_aes.c AES_xts_decrypt
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2k-req-x509.patch
+	Liang Hit it! apps/req.c MAIN 887
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2k-cve-2017-3736.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2k-cve-2017-3737.patch
+Parsing /data/Go/src/github.com/liangchenye/parse-func/workspace/openssl-1.0.2k-cve-2017-3738.patch
