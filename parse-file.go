@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"strings"
 )
@@ -8,6 +9,10 @@ import (
 type Function struct {
 	Name string
 	LOC int
+}
+
+func init() {
+	fmt.Println("hello, wolrd!")
 }
 
 func ParseFile(filename string) []Function {
@@ -73,13 +78,14 @@ func CheckFunction(line string) string {
 	constRight := 2
 
 	invalidStr := "+-{}#@="
-	
 	for i:= 0; i < len(line); i++ {
 		switch  line[i] {
 		case constStr[constBlank] :
 			// It might be a bug.. not sure
-			begin = i+1
-			right = false
+			// ignore inside (...)
+			if left == false {
+				begin = -1
+			}
 		case constStr[constLeft] :
 			if begin > -1 {
 				end = i
