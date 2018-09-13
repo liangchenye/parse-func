@@ -52,7 +52,7 @@ func TestCheckFunction(t *testing.T) {
 	}
 
 	ret = CheckFunction("abcd(")
-	if ret != "" {
+	if ret != "abcd" {
 		fmt.Println("error: ", ret)
 	}
 

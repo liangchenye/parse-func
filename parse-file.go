@@ -119,8 +119,15 @@ func CheckFunction(line string) string {
 		}
 	}
 
-	if left && right {
+	if left {
+// we might not always get ')'
+// int abcd(int a
+//          int b)
+//{
+//}
+//	if left && right {
 		return line[begin:end]
+		fmt.Println(right)
 	}
 
 	return ""
