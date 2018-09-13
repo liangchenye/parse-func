@@ -96,6 +96,10 @@ func (f *DiffItemFrag) SetDetail(t LineType) error {
 	return nil
 }
 
+func (f *DiffItemFrag) GetFunction() string {
+	return CheckFunction(f.Function)
+}
+
 type DiffSummary struct {
 	Added   int64
 	Removed int64
@@ -201,6 +205,14 @@ func NewDiffItems(lines []Line, search SearchCondition) ([]DiffItem, error) {
 	return items, nil
 }
  
+func (di *DiffItem) GetFile() string {
+	strs := strings.Split(di.File, " ")
+	if len(strs) > 0 {
+		return strs[len(strs) -1]
+	}
+	return ""
+}
+
 func (di *DiffItem) Match(search SearchCondition) bool {
 	for _, s := range search.Skip {
 		switch s.SearchType {

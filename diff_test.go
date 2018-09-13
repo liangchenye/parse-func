@@ -29,6 +29,11 @@ func TestDiffItemFragAll(t *testing.T) {
 	assert.Equal(t, int64(2), frag.Removed, "removed not equal")
 	assert.Equal(t, int64(1), frag.RemovedSeg, "removed seg not equal")
  
+	// to get function
+	assert.Equal(t, "", frag.GetFunction(), "must be nil")
+	frag.Function = "static void int demo()"
+	assert.Equal(t, "demo", frag.GetFunction(), "must be nil")
+
 	testData2 := []byte(`
 	func (gc *GoCrypto) GetPrivKey() ([]byte, error) {
 -       if tlsKeyByte == nil {
@@ -64,7 +69,10 @@ index 5979b477..e928601e 100644
 	assert.Equal(t, 2, len(item.Frags), "get frags error")
 	assert.Equal(t, LineNew, item.Label, "get label error")
 	assert.Equal(t, " --git a/controller/webv1/dockerhub.go b/controller/webv1/dockerhub.go", item.File, "fail to get diff info")
- 
+
+	// get the real file for openssl.. 
+	assert.Equal(t, "b/controller/webv1/dockerhub.go", item.GetFile(), "fail to get fail")
+
 	summary := item.Summary()
 	assert.Equal(t, int64(1), summary.Added, "get summary added error")
 	assert.Equal(t, int64(1), summary.Removed, "get summary removed error")
