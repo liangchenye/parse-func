@@ -65,7 +65,7 @@ func ParseFunction(lines []string) []Function{
 	return funcs
 }
 
-func CheckFunction(line string) string {
+func CheckFunction(lineIn string) string {
 	begin := -1
 	end := -1
 	left := false
@@ -76,7 +76,11 @@ func CheckFunction(line string) string {
 	constLeft := 1
 	constRight := 2
 
+	line1 := strings.TrimSpace(lineIn)
+	line := strings.Replace(line1, " (", "(", 1)
+
 	invalidStr := "{}#=;"
+	invalidOutSideStr := ","
 	for i:= 0; i < len(line); i++ {
 		switch  line[i] {
 		case constStr[constBlank] :
@@ -110,6 +114,10 @@ func CheckFunction(line string) string {
 				right = false
 			} else {
 				begin = i
+			}
+			if !left {
+				if line[i] == invalidOutSideStr[0] {
+				}
 			}
 		}
 	}

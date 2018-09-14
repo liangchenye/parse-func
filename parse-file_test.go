@@ -51,6 +51,16 @@ func TestCheckFunction(t *testing.T) {
 		fmt.Println("error: ", ret)
 	}
 
+	ret = CheckFunction("abcd ()")
+	if ret != "abcd" {
+		fmt.Println("error: ", ret)
+	}
+
+	ret = CheckFunction("abcd();")
+	if ret != "" {
+		fmt.Println("error: ", ret)
+	}
+
 	ret = CheckFunction("abcd(")
 	if ret != "abcd" {
 		fmt.Println("error: ", ret)
